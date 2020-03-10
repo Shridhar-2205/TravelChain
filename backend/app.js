@@ -9,7 +9,8 @@ const passport = require('passport');
 const cors = require('cors');
 var mongoose = require('mongoose');
 //const local_db = 'mongodb://localhost:27017/tourapp';
-const mlab_db = 'mongodb://localhost:27017/tourapp';
+//const local_db = 'mongodb://superuser2:superuser2@ds147723.mlab.com:47723/homeaway_lab2';
+const mlab_db = 'mongodb://superuser2:superuser2@ds147723.mlab.com:47723/homeaway_lab2';
 
 mongoose.connect(mlab_db)
 .then(() => console.log("MongoDB Connected"))
