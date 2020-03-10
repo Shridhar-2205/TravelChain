@@ -10,7 +10,7 @@ class IndHelicopterItem extends Component {
 onbookHomeClick(home) {
     //this.props.bookThisHome(home);
     axios
-      .post('http://localhost:3001/bookhome', home)
+      .post('http://18.222.187.40:3001/bookhome', home)
       .then(function(res) { 
           if (res.data) {
             alert("Your Booking Successful")

@@ -16,7 +16,7 @@ import {
   export const getHomes = () => dispatch => {
     dispatch(setProfileLoading());
     axios
-      .get('http://localhost:3001/allHomes')
+      .get('http://18.222.187.40:3001/allHomes')
       .then(res =>
         dispatch({
           type: GET_ALL_HOMES,
@@ -35,7 +35,7 @@ import {
   export const getOwnerHomes = () => dispatch => {
     dispatch(setProfileLoading());
     axios
-      .get('http://localhost:3001/OwnerHomes')
+      .get('http://18.222.187.40:3001/OwnerHomes')
       .then(res =>
         
         dispatch({
@@ -56,7 +56,7 @@ import {
   export const getBookedHomes = () => dispatch => {
     dispatch(setProfileLoading());
     axios
-      .get('http://localhost:3001/bookedHomes')
+      .get('http://18.222.187.40:3001/bookedHomes')
       .then(res =>
         
         dispatch({
@@ -78,7 +78,7 @@ import {
   export const getHomeByHomeId = _id => dispatch => {
     dispatch(setProfileLoading());
     axios
-      .get(`http://localhost:3001/home/${_id}`)
+      .get(`http://18.222.187.40:3001/home/${_id}`)
       .then(res =>
         
         dispatch({
